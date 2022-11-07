@@ -6,9 +6,6 @@ import BaseListItem from './common/BaseListItem.vue';
   <nav>
     <ul>
       <BaseListItem>
-        <RouterLink :to="{ name: 'home' }">Movieverse</RouterLink>
-      </BaseListItem>
-      <BaseListItem>
         <RouterLink :to="{ name: 'movies' }">Movies</RouterLink>
       </BaseListItem>
       <BaseListItem>
@@ -17,3 +14,13 @@ import BaseListItem from './common/BaseListItem.vue';
     </ul>
   </nav>
 </template>
+
+<style scoped>
+ul {
+  display: flex;
+}
+
+li {
+  margin-right: .5rem;
+}
+</style>

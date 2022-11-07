@@ -1,9 +1,19 @@
+<script setup>
+import BaseListItem from './common/BaseListItem.vue';
+</script>
+
 <template>
   <nav>
     <ul>
-      <li>
+      <BaseListItem>
         <RouterLink :to="{ name: 'home' }">Movieverse</RouterLink>
-      </li>
+      </BaseListItem>
+      <BaseListItem>
+        <RouterLink :to="{ name: 'movies' }">Movies</RouterLink>
+      </BaseListItem>
+      <BaseListItem>
+        <RouterLink :to="{ name: 'login' }">Login</RouterLink>
+      </BaseListItem>
     </ul>
   </nav>
 </template>
